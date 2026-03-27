@@ -1315,6 +1315,7 @@ def predict(  # noqa: C901, PLR0915, PLR0912
             checkpoint,
             strict=True,
             predict_args=predict_args,
+            weights_only = False,
             map_location="cpu",
             diffusion_process_args=asdict(diffusion_params),
             ema=False,
